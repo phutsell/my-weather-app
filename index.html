@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <script src="https://kit.fontawesome.com/3e4a7ee4e8.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row">
+          <div class="col-3">
+              <h1>63°</h1>
+              <div class="high-low">77° | 54°</div>
+          </div>
+          <div class="col-3">
+              <div class="city" id="city-element">Los Angeles, CA</div>
+              <div class="date-time" id="current-time">Apr 4 | 9:55pm</div>
+              <div class="description">Clear</div> 
+          </div>
+          <div class="col-6">
+          <form class="search-bar" id="search-form">
+            <input type="text" placeholder="Enter a city" id="city-input" autocomplete="off" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        <br /> 
+          </div>
+      </div>
+      <br />
+      <br />
+        <div class="row">
+          <div class="col">
+              <strong>Tues</strong>
+              <br />
+              <div class="high-low">82° | 55°</div> 
+            <br />
+          
+            <i class="fa-solid fa-sun"></i>
+            </div>
+          <div class="col">
+              <strong>Wed</strong>
+               <br />
+             <div class="high-low">97° | 59°</div> 
+              <br />
+              
+              <i class="fa-solid fa-sun"></i>
+            </div>
+          <div class="col">
+              <strong>Thurs</strong>
+               <br />
+             <div class="high-low"> 99° | 66°</div>
+            <br />
+            
+            <i class="fa-solid fa-sun"></i>
+            </div>
+          <div class="col">
+              <strong>Fri</strong>
+               <br />
+                <div class="high-low">99° | 66°</div> 
+              <br />
+              
+              <i class="fa-solid fa-sun"></i>
+            </div>
+          <div class="col">
+              <strong>Sat</strong>
+               <br />
+             <div class="high-low">90° | 63°</div> 
+              <br />
+              
+              <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
