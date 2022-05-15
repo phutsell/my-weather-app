@@ -36,3 +36,7 @@ h1 {
   position: relative;
   left: 30px;
 }
+
+.description {
+  text-transform: capitalize;
+}
