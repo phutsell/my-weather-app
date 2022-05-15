@@ -5,7 +5,11 @@ function showTemperature(response) {
   h1.innerHTML = `${temperature}°C`;
   document.querySelector(".description").innerHTML =
     response.data.weather[0].description;
-  console.log(response);
+  let iconElement = document.querySelector("#weather-icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function submitCity(event) {
