@@ -2,7 +2,7 @@ function showTemperature(response) {
   document.querySelector("#city-element").innerHTML = response.data.name;
   let h1 = document.querySelector("h1");
   let temperature = Math.round(response.data.main.temp);
-  h1.innerHTML = `${temperature}°C`;
+  h1.innerHTML = `${temperature}`;
   document.querySelector(".description").innerHTML =
     response.data.weather[0].description;
   let iconElement = document.querySelector("#weather-icon");
@@ -72,3 +72,14 @@ if (minutes < 10) {
 
 let currentTime = document.querySelector("#current-time");
 currentTime.innerHTML = `${month} ${date} | ${hour}:${minutes}`;
+
+function showFahrenheitTemp(event) {
+  event.preventDefault();
+  let fahrenheitTemp = (14 * 9) / 5 + 32;
+  alert(fahrenheitTemp);
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemp);
