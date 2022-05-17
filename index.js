@@ -1,6 +1,6 @@
 function showTemperature(response) {
   document.querySelector("#city-element").innerHTML = response.data.name;
-  celsiusTemp = response.data.main.temp;
+  let celsiusTemp = response.data.main.temp;
   let h1 = document.querySelector("h1");
   let temperature = Math.round(celsiusTemp);
   h1.innerHTML = `${temperature}`;
