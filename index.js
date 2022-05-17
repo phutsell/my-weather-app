@@ -1,6 +1,6 @@
 function showTemperature(response) {
   document.querySelector("#city-element").innerHTML = response.data.name;
-  let celsiusTemp = response.data.main.temp;
+  celsiusTemp = response.data.main.temp;
   let h1 = document.querySelector("h1");
   let temperature = Math.round(celsiusTemp);
   h1.innerHTML = `${temperature}`;
@@ -23,9 +23,6 @@ function submitCity(event) {
   let currentCityElement = document.querySelector("#city-element");
   currentCityElement.innerHTML = `${currentCity.value}`;
 
-  search(currentCity.value);
-}
-function search(city) {
   let apiKey = "b71f46cc93e34e246ee3f0482d575e3e";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${currentCity.value}&appid=${apiKey}&units=metric`;
 
