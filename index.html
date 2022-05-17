@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <script src="https://kit.fontawesome.com/3e4a7ee4e8.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3e4a7ee4e8.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,79 +20,97 @@
   </head>
   <body>
     <div class="container">
-
       <div class="row">
-          <div class="col-3">
-              <h1 id="temperature">63°</h1><span id="units"><a href="#" id="celsius-link">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
-              <div class="icon">
-                <img src="http://openweathermap.org/img/wn/10d@2x.png"
-                id="weather-icon" alt="clear">
-              </div>
+        <div class="col-3">
+          <div class="d-flex justify-content-center">
+            <h1 id="temperature">63°</h1>
+            <span id="units"
+              ><a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a></span
+            >
+
+            <div class="icon">
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                id="weather-icon"
+                alt="clear"
+              />
+            </div>
           </div>
           <div class="col-3">
-              <div class="city" id="city-element">Los Angeles, CA</div>
-              <div class="date-time" id="current-time">Apr 4 | 9:55pm</div>
-              <div class="description">Clear</div> 
-              <div class="wind-speed">Wind: <span id="wind"></span> km/h</div>
+            <div class="city" id="city-element">Los Angeles, CA</div>
+            <div class="date-time" id="current-time">Apr 4 | 9:55pm</div>
+            <div class="description">Clear</div>
+            <div class="wind-speed">Wind: <span id="wind"></span> km/h</div>
           </div>
           <div class="col-6">
-          <form class="search-bar" id="search-form">
-            <input type="text" placeholder="Enter a city" id="city-input" autocomplete="off" />
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
-        <br /> 
+            <form class="search-bar" id="search-form">
+              <input
+                type="text"
+                placeholder="Enter a city"
+                id="city-input"
+                autocomplete="off"
+              />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <br />
           </div>
-      </div>
+        </div>
 
-      <br />
+        <br />
         <div class="row">
           <div class="col">
-              <strong>Tues</strong>
-              <br />
-              <div class="high-low">82° | 55°</div> 
+            <strong>Tues</strong>
             <br />
-          
-            <i class="fa-solid fa-sun"></i>
-            </div>
-          <div class="col">
-              <strong>Wed</strong>
-               <br />
-             <div class="high-low">97° | 59°</div> 
-              <br />
-              
-              <i class="fa-solid fa-sun"></i>
-            </div>
-          <div class="col">
-              <strong>Thurs</strong>
-               <br />
-             <div class="high-low"> 99° | 66°</div>
+            <div class="high-low">82° | 55°</div>
             <br />
-            
+
             <i class="fa-solid fa-sun"></i>
-            </div>
+          </div>
           <div class="col">
-              <strong>Fri</strong>
-               <br />
-                <div class="high-low">99° | 66°</div> 
-              <br />
-              
-              <i class="fa-solid fa-sun"></i>
-            </div>
+            <strong>Wed</strong>
+            <br />
+            <div class="high-low">97° | 59°</div>
+            <br />
+
+            <i class="fa-solid fa-sun"></i>
+          </div>
           <div class="col">
-              <strong>Sat</strong>
-               <br />
-             <div class="high-low">90° | 63°</div> 
-              <br />
-              
-              <i class="fa-solid fa-cloud-sun"></i>
-            </div>
+            <strong>Thurs</strong>
+            <br />
+            <div class="high-low">99° | 66°</div>
+            <br />
+
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <div class="col">
+            <strong>Fri</strong>
+            <br />
+            <div class="high-low">99° | 66°</div>
+            <br />
+
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <div class="col">
+            <strong>Sat</strong>
+            <br />
+            <div class="high-low">90° | 63°</div>
+            <br />
+
+            <i class="fa-solid fa-cloud-sun"></i>
+          </div>
         </div>
       </div>
     </div>
-   <br />
+    <br />
     <script src="index.js"></script>
   </body>
   <div class="code-link">
-       <small><a href="https://github.com/phutsell/my-weather-app">Open Sourced Code</a> by Paige C. Hutsell</small>
+    <small
+      ><a href="https://github.com/phutsell/my-weather-app"
+        >Open Sourced Code</a
+      >
+      by Paige C. Hutsell</small
+    >
   </div>
 </html>
