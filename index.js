@@ -1,6 +1,5 @@
 function showTemperature(response) {
   document.querySelector("#city-element").innerHTML = response.data.name;
-  celsiusTemp = response.data.main.temp;
   let h1 = document.querySelector("h1");
   let temperature = Math.round(celsiusTemp);
   h1.innerHTML = `${temperature}`;
@@ -12,6 +11,8 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  celsiusTemp = response.data.main.temp;
 
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = Math.round(response.data.wind.speed);
