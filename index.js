@@ -3,7 +3,7 @@ function showTemperature(response) {
 
   let h1 = document.querySelector("h1");
   let temperature = Math.round(celsiusTemp);
-  h1.innerHTML = `${temperature}`;
+  h1.innerHTML = `${temperature}°`;
   document.querySelector(".description").innerHTML =
     response.data.weather[0].description;
   let iconElement = document.querySelector("#weather-icon");
