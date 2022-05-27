@@ -27,7 +27,7 @@ h1 {
   font-size: small;
   position: relative;
 }
-.col {
+.col-2 {
   color: white;
   text-align: center;
 }
@@ -43,4 +43,21 @@ h1 {
 
 .code-link {
   position: relative;
+}
+
+.weather-forecast {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+}
+
+.weather-forecast-temp {
+  font-size: 13px;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.6;
 }
