@@ -14,6 +14,7 @@ h1 {
   font-size: 48px;
   text-align: center;
   position: relative;
+  line-height: 1;
 }
 .high-low {
   color: white;
@@ -43,6 +44,8 @@ h1 {
 
 .code-link {
   position: relative;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .weather-forecast {
